@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,90 +8,643 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>document</title>
 </head>
-<body >
+
+<body>
+    <!-- RERA MODAL BOX START-->
+   <!-- <div class="modal fade modal-dialog-centered " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" 
+         aria-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RERA DISCLAIMER</h5>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- RERA MODAL BOX END-->
+
     <!-- Navbar Start -->
-    <nav class="navbar  navbar-expand-lg navbar-light fixed-top mb-5 ">
-  <div class="container">
-    <a class="navbar-brand" href="index.html">Company</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse float-end" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#about">About Us</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Dropdown</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Ongoing</a></li>
-            <li><a class="dropdown-item" href="#">Upcoming</a></li>
-            <li><a class="dropdown-item" href="#">Completed</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-          
-        <li class="nav-item">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Sales Inquiry</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Company</a>
+            <button class="navbar-toggler mx-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Projects</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Ongoing</a></li>
+                            <li><a class="dropdown-item" href="#">Upcoming</a></li>
+                            <li><a class="dropdown-item" href="#">Completed</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a  class="nav-link btn" data-bs-toggle="modal" 
+                      data-bs-target="#exampleModalSalesInquiry">Sales Inquiry</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Navbar End -->
 
-    <!-- Carousel Start Here-->
-<div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <!-- SALES INQUIRY MODAL BOX START-->
 
-  <!-- Indicators/dots -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
-  
-  <!-- The slideshow/carousel -->
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="lake.jpg" alt="Los Angeles" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>Los Angeles</h3>
-        <p>We had such a great time in LA!</p>
+<div class="modal fade modal-dialog-centered modal-dialog-scrollable" id="exampleModalSalesInquiry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="sunset.jpg" alt="Chicago" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>Chicago</h3>
-        <p>Thank you, Chicago!</p>
-      </div> 
-    </div>
-    <div class="carousel-item">
-      <img src="landscape.jpg" alt="New York" class="d-block" style="width:100%">
-      <div class="carousel-caption">
-        <h3>New York</h3>
-        <p>We love the Big Apple!</p>
-      </div>  
-    </div>
   </div>
-  
-  <!-- Left and right controls/icons -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button>
 </div>
-<!-- caraousel End Here-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SALES INQUIRY MODAL BOX END-->
+
+    <!-- Carousel Start Here-->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="full-screen" src="lake.jpg" alt="Los Angeles" class="d-block">
+                <div class="carousel-caption">
+                    <h3>Los Angeles</h3>
+                    <p>We had such a great time in LA!</p>
+                    <div class="vertical-set">
+                        <ul class="list-inline">
+                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
+                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="full-screen" src="sunset.jpg" alt="Chicago" class="d-block">
+                <div class="carousel-caption">
+                    <h3>Chicago</h3>
+                    <p>Thank you, Chicago!</p>
+                    <div class="vertical-set">
+                        <ul class="list-inline">
+                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
+                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="full-screen" src="landscape.jpg" alt="New York" class="d-block">
+                <div class="carousel-caption">
+                    <h3>New York</h3>
+                    <p>We love the Big Apple!</p>
+                    <div class="vertical-set">
+                        <ul class="list-inline">
+                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
+                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button> -->
+    </div>
+    <!-- caraousel End Here-->
+
+    <!--About us section-->
+    <section class="py-5 bg-image" id="about">
+        <div class="container px-5 my-5">
+            <div class="row gx-5 align-items-center">
+                <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="lake.jpg" alt="...">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="text-center h1-edit">About Us</h2>
+                    <p class="lead text-dark mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Aliquam
+                        reprehenderit dolore illo voluptates nisi consectetur officia eveniet ea corporis temporibus
+                        optio corrupti
+                        eaque magni autem, voluptatem adipisci sit animi rerum.<br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio commodi, sed magnam, dignissimos
+                        consectetur
+                        voluptatibus inventore, quis sunt reiciendis doloribus incidunt iusto! Porro quibusdam cumque
+                        voluptates
+                        nisi provident alias laborum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--About us section end-->
+
+    <!--Team section-->
+    <section id="team" class="team content-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12 col-sm-12">
+                    <h1>Our Team</h1>
+                    <h3 class="caption gray">Meet the people who make awesome stuffs</h3>
+                </div><!-- /.col-md-12 -->
+
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <figure>
+                                    <img src="lake.jpg" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
+                                            asperiores mollitia.</p>
+                                        <ul>
+                                            <li><a href=""><i class="logo-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>Lauren Cox</h4>
+                                <p>Creative Director</p>
+                            </div><!-- /.team-member-->
+                        </div><!-- /.col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <figure>
+                                    <img src="landscape.jpg" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <p>Neque minima ea, a praesentium saepe nihil maxime quod esse numquam explicabo
+                                            eligendi.</p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>Jessie Barnett</h4>
+                                <p>UI/UX Designer</p>
+                            </div><!-- /.team-member-->
+                        </div><!-- /.col-md-4 -->
+
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <figure>
+                                    <img src="sunset.jpg" alt="" class="img-responsive">
+                                    <figcaption>
+                                        <p>Temporibus dolor, quisquam consectetur molestias, veniam voluptatum. Beatae
+                                            alias omnis totam.</p>
+                                        <ul>
+                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
+                                            <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
+                                        </ul>
+                                    </figcaption>
+                                </figure>
+                                <h4>Terry Fletcher</h4>
+                                <p>Web Developer</p>
+                            </div><!-- /.team-member-->
+                        </div><!-- /.col-md-4 -->
+
+
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+
+            </div><!-- /.row -->
+        </div><!-- /.container -->
+    </section><!-- /.our-team -->
+    <!--Team section end-->
+
+    <!--Project section-->
+    <section class="text-center mt-5 bg-image">
+        <h1 class="h1-edit">Projects</h1>
+        <div class="grid">
+            <figure class="effect-steve mx-3 my-3">
+                <img src="lake.jpg" />
+                <figcaption>
+                    <h2>Sarah <span> Mitchelle</span></h2>
+                    <p>Originally from Miami. I love black and white classics, chillout music and green tea.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="effect-steve mx-3 my-3">
+                <img src="landscape.jpg" />
+                <figcaption>
+                    <h2>Tiffany <span>Roberts</span></h2>
+                    <p>Award-winning travel ninja. Pop culture enthusiast.</p>
+                </figcaption>
+            </figure>
+
+            <figure class="effect-steve mx-3 my-3">
+                <img src="sunset.jpg" />
+                <figcaption>
+                    <h2>Richard <span>Clinton</span></h2>
+                    <p>Currently in love with cycling. Obsessed with creating helpful stuff.</p>
+                </figcaption>
+            </figure>
+        </div>
+        <!--Project section end-->
+
+        <!--video section-->
+        <div class="ResponsiveYTPlayer text-center"><iframe class="youtube-player" id="player" type="text/html"
+                src="https://www.youtube.com/embed/a7AAuas6mvA?wmode=opaque&autohide=1&autoplay=1&enablejsapi=1"
+                frameborder="0" muted="muted"></iframe></div>
+    </section>
+    <!--video section end-->
+
+    <!--Gallery section-->
+    <section class="bg-dark1 pt-5" id="gallery" >
+        <div class="content text-center">
+            <h1>image gallery</h1>
+            <div class="gallery">
+                <figure class="galleryItem">
+                    <a href="#"><img src="lake.jpg" alt="Plant"></a>
+                    <figcaption>Plant</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="landscape.jpg" alt="Man with facial tattoo"></a>
+                    <figcaption>Man with facial tattoo</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="sunset.jpg" alt="Leasure"></a>
+                    <figcaption>Leasure</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="lake.jpg" alt="Pretty colors"></a>
+                    <figcaption>Pretty colors</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="landscape.jpg" alt="Architecture"></a>
+                    <figcaption>Architecture</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="sunset.jpg" alt="Beach"></a>
+                    <figcaption>Beach</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="lake.jpg" alt="Mountains"></a>
+                    <figcaption>Mountains</figcaption>
+                </figure>
+                <figure class="galleryItem">
+                    <a href="#"><img src="landscape.jpg" alt="Starry sky"></a>
+                    <figcaption>Starry sky</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!--Gallery section end-->
+
+    <!--Testimonial section-->
+    <section id="testimonials" class="pb-5">
+        <h1>Testimonial</h1>
+        <div class="testimonial-container">
+            <div class="testimonail">
+                <div class="text">
+                    <div class="quote">&#8220;</div>
+                    <p class="review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, esse
+                        quos error beatae dolores, dicta maxime libero optio voluptatem
+                        culpa, obcaecati omnis!
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="pfp">
+                        <img src="https://source.unsplash.com/random" alt="Den Kerdian" />
+                    </div>
+                    <div class="information">
+                        <span class="name">Den Kerdian</span>
+                        <div class="social">
+                            <a target="_blank" href="https://www.facebook.com">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://www.twitter.com">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a target="_blank" href="https://www.linkedin.com">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonail">
+                <div class="text">
+                    <div class="quote">&#8220;</div>
+                    <p class="review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, esse
+                        quos error beatae dolores, dicta maxime libero optio voluptatem
+                        culpa, obcaecati omnis!
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="pfp">
+                        <img src="https://unsplash.it/1200/1200" alt="Den Kerdian" />
+                    </div>
+                    <div class="information">
+                        <span class="name">Betha Staty</span>
+                        <div class="social">
+                            <a href="https://www.facebook.com">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonail">
+                <div class="text">
+                    <div class="quote">&#8220;</div>
+                    <p class="review">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, esse
+                        quos error beatae dolores, dicta maxime libero optio voluptatem
+                        culpa, obcaecati omnis!
+                    </p>
+                </div>
+                <div class="info">
+                    <div class="pfp">
+                        <img src="https://unsplash.it/1300/1300" alt="Den Kerdian" />
+                    </div>
+                    <div class="information">
+                        <span class="name">Ram Kishan</span>
+                        <div class="social">
+                            <a href="https://www.facebook.com">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                            <a href="https://www.twitter.com">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                            <a href="https://www.linkedin.com">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Testimonial section end-->
+
+    <!--Footer section-->
+    <!-- ==============================================
+		CONTACT
+		=============================================== -->
+    <section id="contact" class="add-padding border-top-color2">
+
+        <div class="container text-center">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+
+                    <h1 class="big-text">Contact Me</h1>
+
+                    <p class="lead">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
+
+                    <p>Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js, Handlebars.js, jQuery,
+                        AJAX, HTML5, CSS3, SASS, SQL, APIs, Git, GitHub/Bitbucket, WordPress, Heroku, Responsive/Mobile
+                        Development.
+
+                    <p>Please feel free to contact me with questions, comments or collaborations.</p>
+
+                    <p>For more information, <a href="http://korenlc.com" target="_blank">visit my blog.</a></p>
+
+                </div>
+
+                <!--=== Contact Form ===-->
+
+                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php"
+                    method="post" novalidate>
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-name">Name</label>
+                        <div class="controls">
+                            <input id="contact-name" name="contactName" placeholder="Your name"
+                                class="form-control requiredField" data-new-placeholder="Your name" type="text"
+                                data-error-empty="Please enter your name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div><!-- End name input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-mail">Email</label>
+                        <div class=" controls">
+                            <input id="contact-mail" name="email" placeholder="Your email"
+                                class="form-control requiredField" data-new-placeholder="Your email" type="email"
+                                data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div><!-- End email input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-message">Message</label>
+                        <div class="controls">
+                            <textarea id="contact-message" name="comments" placeholder="Your message"
+                                class="form-control requiredField" data-new-placeholder="Your message" rows="6"
+                                data-error-empty="Please enter your message"></textarea>
+                            <i class="fa fa-comment"></i>
+                        </div>
+                    </div><!-- End textarea -->
+
+                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!"
+                            data-sending-message="Sending..." data-ok-message="Message Sent"><i
+                                class="fa fa-paper-plane"></i>Send Message</button></p>
+                    <input type="hidden" name="submitted" id="submitted" value="true" />
+
+                </form><!-- End contact-form -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==============================================
+		FOOTER
+		=============================================== -->
+
+    <footer id="main-footer" class="add-padding border-top-color2">
+
+        <div class="container">
+
+            <p><a href="http://korenlc.com" target="_blank">VISIT MY BLOG</a></p><br>
+
+            <ul class="social-links text-center">
+                <li><a href="https://twitter.com/korenlc" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+                <li><a href="https://plus.google.com/u/0/+KLCohen/posts/p/pub" target="_blank"><i
+                            class="fa fa-google-plus fa-fw"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/korenlesliecohen" target="_blank"><i
+                            class="fa fa-linkedin fa-fw"></i></a></li>
+            </ul>
+
+            <p class="text-center">&copy; 2014 - Koren Leslie Cohen</p>
+
+        </div>
+
+    </footer>
+    <!--Footer section end-->
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Testimonial section end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/player_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player', {
+                playerVars: { 'autoplay': 1, 'controls': 1, 'autohide': 1, 'wmode': 'opaque' },
+                videoId: 'JW5meKfy3fY',
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.mute();
+        }
+    </script>
+    <!-- <script>
+         var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+         myModal.show();
+</script> -->
+    <script>
+        let galleryItems = document.querySelectorAll('.galleryItem');
+
+        const closeLightBox = (galleryItem, overlay) => {
+            let originLinkTag = galleryItem.querySelector('a');
+            let image = overlay.querySelector('img');
+            let caption = overlay.querySelector('figcaption');
+
+            // move image and caption back to their original parents
+            originLinkTag.appendChild(image);
+            galleryItem.appendChild(caption);
+
+            // remove the light box overlay
+            document.body.removeChild(overlay)
+        }
+
+        const openLightBox = (galleryItem) => {
+            // create the overlay to darken the page
+            let lightBoxOverlay = document.createElement('div');
+            lightBoxOverlay.classList.add('lightBoxOverlay');
+
+            // create the close button
+            let lightBoxClose = document.createElement('a');
+            lightBoxClose.innerText = 'X';
+            lightBoxClose.classList.add('closeButton');
+            lightBoxOverlay.appendChild(lightBoxClose);
+
+            // create a container for the image
+            let lightBoxImageContainer = document.createElement('figure');
+            lightBoxImageContainer.classList.add('container');
+            lightBoxOverlay.appendChild(lightBoxImageContainer);
+
+            // take the already existing image and move it into the overlay container
+            let image = galleryItem.querySelector('img');
+            lightBoxImageContainer.appendChild(image);
+
+            // take the already existing figcaption and move it into the overlay container
+            let caption = galleryItem.querySelector('figcaption');
+            lightBoxImageContainer.appendChild(caption);
+
+            // add a closing routine to close button
+            lightBoxClose.addEventListener('click', (e) => {
+                e.preventDefault();
+                closeLightBox(galleryItem, lightBoxOverlay);
+            });
+
+            // display the overlay
+            document.body.appendChild(lightBoxOverlay);
+        }
+
+        galleryItems.forEach(el => {
+            let linkTag = el.querySelector('a');
+            linkTag.addEventListener('click', (e) => {
+                e.preventDefault();
+                openLightBox(el);
+            });
+        });
+
+    </script>
+
 </body>
+
 </html>
+<!-- https://codepen.io/mauritiusdsilva/pen/NqLrxO -->
+<!-- https://codepen.io/kw7oe/pen/mPeepv -->
+<!-- https://codepen.io/katguth3/pen/jmOrPZ -->
+<!-- https://codepen.io/trentontri/pen/WvMGLm?html-preprocessor=markdown -->
+<!-- https://codepen.io/maulikdarji/pen/WwqdMO -->
+<!-- https://codepen.io/SebinNyshkim/pen/MxxjaN -->
+<!-- https://codepen.io/CodingPencil/pen/ExQoQGm -->
+<!-- https://codepen.io/cqzbfcia/pen/vYEQLQR -->
+<!-- https://codepen.io/uiswarup/pen/oNNMedZ -->
