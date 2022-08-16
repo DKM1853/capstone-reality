@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>document</title>
+    <script src="main.js"></script>
 </head>
 
 <body>
     <!-- RERA MODAL BOX START-->
-   <div class="modal fade modal-dialog-centered " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" 
+    <!-- <div class="modal fade modal-dialog-centered " id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" 
          aria-hidden="true" data-bs-keyboard="false" data-bs-backdrop="static">
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -27,7 +28,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- RERA MODAL BOX END-->
 
     <!-- Navbar Start -->
@@ -63,8 +64,8 @@
                         <a class="nav-link" href="#contact">Contact us</a>
                     </li>
                     <li class="nav-item">
-                      <a  class="nav-link btn" data-bs-toggle="modal" 
-                      data-bs-target="#exampleModalSalesInquiry">Sales Inquiry</a>
+                        <a class="nav-link btn" data-bs-toggle="modal" data-bs-target="#exampleModalSalesInquiry">Sales
+                            Inquiry</a>
                     </li>
                 </ul>
             </div>
@@ -74,64 +75,68 @@
 
     <!-- SALES INQUIRY MODAL BOX START-->
 
-<div class="modal fade modal-dialog-scrollable" id="exampleModalSalesInquiry" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sales Inquiry</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <section id="sales-form" class="col-md-offset-1 scrollimation fade-left d3" novalidate>
+    <div class="modal fade modal-dialog-scrollable" id="exampleModalSalesInquiry" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sales Inquiry</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <section id="sales-form" class="col-md-offset-1 scrollimation fade-left d3" novalidate>
 
-                    <div class="form-group">
-                        <label class="control-label" for="contact-name">Name</label>
-                        <div class="controls">
-                            <input id="sales-name" name="salesName" placeholder="Your name*"
-                                class="form-control requiredField" data-new-placeholder="Your name" type="text"
-                                data-error-empty="Please enter your name">
-                            <i class="fa fa-user"></i>
+                        <div class="form-group">
+                            <label class="control-label" for="contact-name">Name</label>
+                            <div class="controls">
+                                <input id="sales-name" name="salesName" placeholder="Your name*"
+                                    class="form-control requiredField" data-new-placeholder="Your name" type="text"
+                                    data-error-empty="Please enter your name">
+                                <i class="fa fa-user"></i>
+                            </div>
+                        </div><!-- End name input -->
+
+                        <div class="form-group">
+                            <label class="control-label" for="contact-mail">Mobile Number</label>
+                            <div class=" controls">
+                                <input id="sales-mobile-no" name="mobilno" placeholder="Mobile Number*"
+                                    class="form-control requiredField" data-new-placeholder="Your mobile number"
+                                    type="number" data-error-empty="Please enter your mobile number"
+                                    data-error-invalid="Invalid contact number">
+                                <i class="fa fa-mobile"></i>
+                            </div>
                         </div>
-                    </div><!-- End name input -->
 
-                    <div class="form-group">
-                        <label class="control-label" for="contact-mail">Mobile Number</label>
-                        <div class=" controls">
-                            <input id="sales-mobile-no" name="mobilno" placeholder="Mobile Number*"
-                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
-                                data-error-empty="Please enter your mobile number" data-error-invalid="Invalid contact number">
-                            <i class="fa fa-mobile"></i>
+
+                        <div class="form-group">
+                            <label class="control-label" for="contact-mail">Email</label>
+                            <div class=" controls">
+                                <input id="sales-mail" name="salesEmail" placeholder="Email Id"
+                                    class="form-control requiredField" data-new-placeholder="Your email" type="email"
+                                    data-error-empty="Please enter your email"
+                                    data-error-invalid="Invalid email address">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div><!-- End email input -->
+
+
+                        <div class="form-group">
+                            <label class="control-label" for="sales-occuption">Occupation</label>
+                            <div class=" controls">
+                                <select id="occupation" name="occupation" placeholder="Your occupation"
+                                    class="form-control requiredField" data-new-placeholder="Your mobile number"
+                                    type="number" data-error-empty="Please select your occupation"
+                                    data-error-invalid="Invalid occupation">
+                                    <i class="fa fa-choice"></i>
+                                    <option value="">select your occupation*</option>
+                                    <option value="Business">Business</option>
+                                    <option value="serviceindustry">Service Industry</option>
+                                    <option value="selfemployed">Self Employed</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
 
-
-                    <div class="form-group">
-                        <label class="control-label" for="contact-mail">Email</label>
-                        <div class=" controls">
-                            <input id="sales-mail" name="salesEmail" placeholder="Email Id"
-                                class="form-control requiredField" data-new-placeholder="Your email" type="email"
-                                data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
-                            <i class="fa fa-envelope"></i>
-                        </div>
-                    </div><!-- End email input -->
-
-                    
-                    <div class="form-group">
-                        <label class="control-label" for="sales-occuption">Occupation</label>
-                        <div class=" controls">
-                            <select id="occupation" name="occupation" placeholder="Your occupation"
-                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
-                                data-error-empty="Please select your occupation" data-error-invalid="Invalid occupation">
-                            <i class="fa fa-choice"></i>
-                            <option value="">select your occupation*</option>
-                            <option value="Business">Business</option>
-                            <option value="serviceindustry">Service Industry</option>
-                            <option value="selfemployed">Self Employed</option>
-                        </select>
-                        </div>
-                    </div>
-
-                    <!-- <div class="form-group">
+                        <!-- <div class="form-group">
                         <label class="control-label" for="contact-date">Date</label>
                         <div class=" controls">
                             <input id="call-date" name="call-date" placeholder="Your convenient date to call"
@@ -141,31 +146,31 @@
                         </div>
                     </div> -->
 
-                    <div class="form-group">
-                        <label class="control-label" for="contact-message">Message</label>
-                        <div class="controls">
-                            <textarea id="sales-message" name="comments" placeholder="Your message"
-                                class="form-control requiredField" data-new-placeholder="Your message" rows="6"
-                                data-error-empty="Please enter your message"></textarea>
-                            <i class="fa fa-comment"></i>
-                        </div>
-                    </div><!-- End textarea -->
+                        <div class="form-group">
+                            <label class="control-label" for="contact-message">Message</label>
+                            <div class="controls">
+                                <textarea id="sales-message" name="comments" placeholder="Your message"
+                                    class="form-control requiredField" data-new-placeholder="Your message" rows="6"
+                                    data-error-empty="Please enter your message"></textarea>
+                                <i class="fa fa-comment"></i>
+                            </div>
+                        </div><!-- End textarea -->
 
-                    <p><button name="submit"  class="btn btn-primary" data-error-message="Error!"
-                            data-sending-message="Sending..." data-ok-message="Message Sent"
+                        <p><button name="submit" class="btn btn-primary" data-error-message="Error!"
+                                data-sending-message="Sending..." data-ok-message="Message Sent"
                                 class="fa fa-paper-plane" onclick="submitSalesInquiryDetails()">SEND
                             </button>
-                    </p>
+                        </p>
 
-                </section><!-- End contact-form -->
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
+                    </section><!-- End contact-form -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     <!-- SALES INQUIRY MODAL BOX END-->
 
@@ -187,11 +192,13 @@
                     <h3>Los Angeles</h3>
                     <p>We had such a great time in LA!</p>
                     <div class="vertical-set">
-                        <ul class="list-inline">
-                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
-                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
+                        <ul class="social-links text-center">
+                            <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i
+                                        class="fa fa-facebook fa-fw set"></i></a></li>
+                            <li><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i
+                                        class="fa fa-instagram fa-fw set"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i
+                                        class="fa fa-youtube fa-fw set"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -202,11 +209,13 @@
                     <h3>Chicago</h3>
                     <p>Thank you, Chicago!</p>
                     <div class="vertical-set">
-                        <ul class="list-inline">
-                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
-                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
+                        <ul class="social-links text-center">
+                            <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i
+                                        class="fa fa-facebook fa-fw set"></i></a></li>
+                            <li><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i
+                                        class="fa fa-instagram fa-fw set"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i
+                                        class="fa fa-youtube fa-fw set"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -217,11 +226,13 @@
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
                     <div class="vertical-set">
-                        <ul class="list-inline">
-                            <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
-                            <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
+                        <ul class="social-links text-center">
+                            <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i
+                                        class="fa fa-facebook fa-fw set"></i></a></li>
+                            <li><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i
+                                        class="fa fa-instagram fa-fw set"></i></a></li>
+                            <li><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i
+                                        class="fa fa-youtube fa-fw set"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -242,7 +253,7 @@
     <section class="py-5 bg-image" id="about">
         <div class="container px-5 my-5">
             <div class="row gx-5 align-items-center">
-                <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="lake.jpg" alt="...">
+                <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0 img-effect" src="lake.jpg" alt="...">
                 </div>
                 <div class="col-lg-6">
                     <h2 class="text-center h1-edit">About Us</h2>
@@ -283,7 +294,7 @@
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae
                                             asperiores mollitia.</p>
                                         <ul>
-                                            <li><a href=""><i class="logo-facebook"></i></a></li>
+                                            <li><a href=""><i class="fa fa-facebook fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-twitter fa-2x"></i></a></li>
                                             <li><a href=""><i class="fa fa-linkedin fa-2x"></i></a></li>
                                         </ul>
@@ -379,7 +390,7 @@
     <!--video section end-->
 
     <!--Gallery section-->
-    <section class="bg-dark1 pt-5" id="gallery" >
+    <section class="bg-dark1 pt-5" id="gallery">
         <div class="content text-center">
             <h1>image gallery</h1>
             <div class="gallery">
@@ -422,7 +433,7 @@
 
     <!--Testimonial section-->
     <section id="testimonials" class="pb-5">
-        <h1>Testimonial</h1>
+        <h1 class="text-black">Testimonial</h1>
         <div class="testimonial-container">
             <div class="testimonail">
                 <div class="text">
@@ -519,7 +530,7 @@
     <!-- ==============================================
 		CONTACT
 		=============================================== -->
-    <section id="contact" class="add-padding border-top-color2">
+    <section id="contact" class="add-padding border-top-color2 bg-dark1">
 
         <div class="container text-center">
 
@@ -529,15 +540,17 @@
 
                     <h1 class="big-text">Contact Me</h1>
 
-                    <p class="lead">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
+                    <p class="lead text-white">Software Engineer. Lawyer.<br>Experienced Manager. Entrepreneur.</p>
 
-                    <p>Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js, Handlebars.js, jQuery,
+                    <p class="text-white">Sinatra, Ruby on Rails, JavaScript, Node.js, Express.js, Backbone.js,
+                        Handlebars.js, jQuery,
                         AJAX, HTML5, CSS3, SASS, SQL, APIs, Git, GitHub/Bitbucket, WordPress, Heroku, Responsive/Mobile
                         Development.
 
-                    <p>Please feel free to contact me with questions, comments or collaborations.</p>
+                    <p class="text-white">Please feel free to contact me with questions, comments or collaborations.</p>
 
-                    <p>For more information, <a href="http://korenlc.com" target="_blank">visit my blog.</a></p>
+                    <p class="text-white">For more information, <a href="http://korenlc.com" target="_blank">visit my
+                            blog.</a></p>
 
                 </div>
 
@@ -569,8 +582,9 @@
                         <label class="control-label" for="contact-mail">Email</label>
                         <div class=" controls">
                             <input id="mobile-no" name="mobilno" placeholder="Your contact number"
-                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
-                                data-error-empty="Please enter your mobile number" data-error-invalid="Invalid contact number">
+                                class="form-control requiredField" data-new-placeholder="Your mobile number"
+                                type="number" data-error-empty="Please enter your mobile number"
+                                data-error-invalid="Invalid contact number">
                             <i class="fa fa-mobile"></i>
                         </div>
                     </div>
@@ -585,9 +599,9 @@
                         </div>
                     </div><!-- End textarea -->
 
-                    <p><button name="submit"  class="btn btn-color2 btn-block" data-error-message="Error!"
-                            data-sending-message="Sending..." data-ok-message="Message Sent"
-                                class="fa fa-paper-plane" onclick="submitContactDetails()">Send Message</button>
+                    <p><button name="submit" class="btn btn-info" data-error-message="Error!"
+                            data-sending-message="Sending..." data-ok-message="Message Sent" class="fa fa-paper-plane"
+                            onclick="submitContactDetails()">Send Message</button>
                     </p>
 
                 </section><!-- End contact-form -->
@@ -602,14 +616,15 @@
 		FOOTER
 		=============================================== -->
 
-    <footer id="main-footer" class="add-padding border-top-color2">
+    <footer id="main-footer" class="add-padding border-top-color2 bg-dark1">
 
         <div class="container">
 
             <p><a href="#" target="_blank">VISIT MY BLOG</a></p><br>
 
             <ul class="social-links text-center">
-                <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+                <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i
+                            class="fa fa-facebook fa-fw"></i></a></li>
                 <li><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i
                             class="fa fa-instagram fa-fw"></i></a></li>
                 <li><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i
@@ -629,8 +644,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+    <script src="main.js"></script>
 
     <script>
         var tag = document.createElement('script');
@@ -657,9 +673,9 @@
         }
     </script>
     <script>
-         var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
-         myModal.show();
-</script>
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'))
+        myModal.show();
+    </script>
     <script>
         let galleryItems = document.querySelectorAll('.galleryItem');
 
@@ -720,7 +736,7 @@
 
     </script>
     <script>
-        function submitContactDetails(){
+        function submitContactDetails() {
             var contactName = document.getElementById('contact-name').value;
             var contactMail = document.getElementById('contact-mail').value;
             var contactNo = document.getElementById('mobile-no').value;
@@ -729,14 +745,14 @@
         }
 
 
-        function submitSalesInquiryDetails(){
+        function submitSalesInquiryDetails() {
             var salesInquiryName = document.getElementById('sales-name').value;
             var salesInquiryMail = document.getElementById('sales-mail').value;
             var salesInquiryNumber = document.getElementById('sales-mobile-no').value;
             var salesInquiryProjectType = document.getElementById('occupation').value;
             var salesInquiryMessage = document.getElementById('sales-message').innerHTML;
 
-            console.log(salesInquiryName,salesInquiryMail,salesInquiryNumber,salesInquiryProjectType,salesInquiryMessage);
+            console.log(salesInquiryName, salesInquiryMail, salesInquiryNumber, salesInquiryProjectType, salesInquiryMessage);
         }
     </script>
 </body>
