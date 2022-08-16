@@ -78,22 +78,90 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Sales Inquiry</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        reprehenderit dolore illo voluptates nisi consectetur officia eveniet ea corporis temporibus
-                        optio corrupti
-                        eaque magni autem, voluptatem adipisci sit animi rerum.<br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio commodi, sed magnam, dignissimos
-                        consectetur
-                        voluptatibus inventore, quis sunt reiciendis doloribus incidunt iusto! Porro quibusdam cumque
-                        voluptates
-                        nisi provident alias laborum.
+        <section id="sales-form" class="col-md-offset-1 scrollimation fade-left d3" novalidate>
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-name">Name</label>
+                        <div class="controls">
+                            <input id="sales-name" name="salesName" placeholder="Your name*"
+                                class="form-control requiredField" data-new-placeholder="Your name" type="text"
+                                data-error-empty="Please enter your name">
+                            <i class="fa fa-user"></i>
+                        </div>
+                    </div><!-- End name input -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-mail">Mobile Number</label>
+                        <div class=" controls">
+                            <input id="sales-mobile-no" name="mobilno" placeholder="Mobile Number*"
+                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
+                                data-error-empty="Please enter your mobile number" data-error-invalid="Invalid contact number">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-mail">Email</label>
+                        <div class=" controls">
+                            <input id="sales-mail" name="salesEmail" placeholder="Email Id"
+                                class="form-control requiredField" data-new-placeholder="Your email" type="email"
+                                data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                    </div><!-- End email input -->
+
+                    
+                    <div class="form-group">
+                        <label class="control-label" for="sales-occuption">Occupation</label>
+                        <div class=" controls">
+                            <select id="occupation" name="occupation" placeholder="Your occupation"
+                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
+                                data-error-empty="Please select your occupation" data-error-invalid="Invalid occupation">
+                            <i class="fa fa-choice"></i>
+                            <option value="">select your occupation*</option>
+                            <option value="Business">Business</option>
+                            <option value="serviceindustry">Service Industry</option>
+                            <option value="selfemployed">Self Employed</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label class="control-label" for="contact-date">Date</label>
+                        <div class=" controls">
+                            <input id="call-date" name="call-date" placeholder="Your convenient date to call"
+                                class="form-control requiredField" type="date"
+                                data-error-empty="Please enter your convenient date to call" data-error-invalid="Invalid your convenient date">
+                            <i class="fa fa-time"></i>
+                        </div>
+                    </div> -->
+
+                    <div class="form-group">
+                        <label class="control-label" for="contact-message">Message</label>
+                        <div class="controls">
+                            <textarea id="sales-message" name="comments" placeholder="Your message"
+                                class="form-control requiredField" data-new-placeholder="Your message" rows="6"
+                                data-error-empty="Please enter your message"></textarea>
+                            <i class="fa fa-comment"></i>
+                        </div>
+                    </div><!-- End textarea -->
+
+                    <p><button name="submit"  class="btn btn-primary" data-error-message="Error!"
+                            data-sending-message="Sending..." data-ok-message="Message Sent"
+                                class="fa fa-paper-plane" onclick="submitSalesInquiryDetails()">SEND
+                            </button>
+                    </p>
+
+                </section><!-- End contact-form -->
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>
@@ -138,7 +206,7 @@
                             <!-- <li class="list-inline-item"><a href="" target="_blank"><i class="fa fa-linkedin fa-2x set"></i></a></li> -->
                             <li class="list-inline-item"><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i class="fa fa-instagram fa-2x set"></i></a></li>
                             <li class="list-inline-item"><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-2x set"></i></a></li>
-                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>>
+                            <li class="list-inline-item"><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i class="fa fa-youtube fa-2x set"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -475,8 +543,7 @@
 
                 <!--=== Contact Form ===-->
 
-                <form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" action="contact.php"
-                    method="post" novalidate>
+                <section id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left d3" novalidate>
 
                     <div class="form-group">
                         <label class="control-label" for="contact-name">Name</label>
@@ -499,6 +566,16 @@
                     </div><!-- End email input -->
 
                     <div class="form-group">
+                        <label class="control-label" for="contact-mail">Email</label>
+                        <div class=" controls">
+                            <input id="mobile-no" name="mobilno" placeholder="Your contact number"
+                                class="form-control requiredField" data-new-placeholder="Your mobile number" type="number"
+                                data-error-empty="Please enter your mobile number" data-error-invalid="Invalid contact number">
+                            <i class="fa fa-mobile"></i>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
                         <label class="control-label" for="contact-message">Message</label>
                         <div class="controls">
                             <textarea id="contact-message" name="comments" placeholder="Your message"
@@ -508,12 +585,12 @@
                         </div>
                     </div><!-- End textarea -->
 
-                    <p><button name="submit" type="submit" class="btn btn-color2 btn-block" data-error-message="Error!"
-                            data-sending-message="Sending..." data-ok-message="Message Sent"><i
-                                class="fa fa-paper-plane"></i>Send Message</button></p>
-                    <input type="hidden" name="submitted" id="submitted" value="true" />
+                    <p><button name="submit"  class="btn btn-color2 btn-block" data-error-message="Error!"
+                            data-sending-message="Sending..." data-ok-message="Message Sent"
+                                class="fa fa-paper-plane" onclick="submitContactDetails()">Send Message</button>
+                    </p>
 
-                </form><!-- End contact-form -->
+                </section><!-- End contact-form -->
 
             </div>
 
@@ -529,17 +606,17 @@
 
         <div class="container">
 
-            <p><a href="http://korenlc.com" target="_blank">VISIT MY BLOG</a></p><br>
+            <p><a href="#" target="_blank">VISIT MY BLOG</a></p><br>
 
             <ul class="social-links text-center">
-                <li><a href="https://twitter.com/korenlc" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
-                <li><a href="https://plus.google.com/u/0/+KLCohen/posts/p/pub" target="_blank"><i
-                            class="fa fa-google-plus fa-fw"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/korenlesliecohen" target="_blank"><i
-                            class="fa fa-linkedin fa-fw"></i></a></li>
+                <li><a href="https://www.facebook.com/Capstone-Realty-106604922049828" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+                <li><a href="https://www.instagram.com/capstone_zurii/" target="_blank"><i
+                            class="fa fa-instagram fa-fw"></i></a></li>
+                <li><a href="https://www.youtube.com/watch?v=a7AAuas6mvA" target="_blank"><i
+                            class="fa fa-youtube fa-fw"></i></a></li>
             </ul>
 
-            <p class="text-center">&copy; 2014 - Koren Leslie Cohen</p>
+            <p class="text-center">&copy; 2022 - Capstone Realty</p>
 
         </div>
 
@@ -642,7 +719,26 @@
         });
 
     </script>
+    <script>
+        function submitContactDetails(){
+            var contactName = document.getElementById('contact-name').value;
+            var contactMail = document.getElementById('contact-mail').value;
+            var contactNo = document.getElementById('mobile-no').value;
+            var contactMessage = document.getElementById('contact-message').innerHTML;
+            console.log(contactName, contactMail, contactNo, contactMessage);
+        }
 
+
+        function submitSalesInquiryDetails(){
+            var salesInquiryName = document.getElementById('sales-name').value;
+            var salesInquiryMail = document.getElementById('sales-mail').value;
+            var salesInquiryNumber = document.getElementById('sales-mobile-no').value;
+            var salesInquiryProjectType = document.getElementById('occupation').value;
+            var salesInquiryMessage = document.getElementById('sales-message').innerHTML;
+
+            console.log(salesInquiryName,salesInquiryMail,salesInquiryNumber,salesInquiryProjectType,salesInquiryMessage);
+        }
+    </script>
 </body>
 
 </html>
